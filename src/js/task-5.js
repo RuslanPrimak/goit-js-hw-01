@@ -4,12 +4,14 @@ const PROMPT_COUNTRY = 'Укажите страну отправления: ';
 const MESSAGE_CANCELLED = 'Отменено пользователем!';
 const MESSAGE_WRONG_COUNTRY = 'В вашей стране доставка не доступна';
 
+console.log('========================= Task 5 =========================');
+
 const userCountry = prompt(PROMPT_COUNTRY);
 let country = null;
 let price;
 
 if (userCountry == null) {
-  alert(MESSAGE_CANCELLED);
+  console.log(MESSAGE_CANCELLED);
 } else {
   switch (userCountry.toUpperCase()) {
     case 'КИТАЙ':
@@ -42,8 +44,8 @@ if (userCountry == null) {
   }
 
   if (country == null) {
-    alert(MESSAGE_WRONG_COUNTRY);
+    console.log(MESSAGE_WRONG_COUNTRY);
   } else {
-    alert(`Доставка в ${country} будет стоить ${price} кредитов`);
+    console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
   }
 }

@@ -7,6 +7,8 @@ function getMessage() {
   return `Выбран «${name}», цена за штуку ${price} кредитов`;
 }
 
+console.log('========================= Task 1 =========================');
+
 console.log(getMessage());
 
 price = 2000;

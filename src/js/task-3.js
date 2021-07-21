@@ -4,6 +4,8 @@ const MESSAGE_CANCELLED = 'Отменено пользователем!';
 const MESSAGE_WELCOME = 'Добро пожаловать!';
 const MESSAGE_ACCESS_DENIED = 'Доступ запрещен, неверный пароль!';
 
+console.log('========================= Task 3 =========================');
+
 let message;
 const password = prompt('Введите пароль:');
 
@@ -15,4 +17,4 @@ if (password === null) {
   message = MESSAGE_ACCESS_DENIED;
 }
 
-alert(message);
+console.log(message);

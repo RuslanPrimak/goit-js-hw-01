@@ -9,6 +9,8 @@ function getOrderMessage(number, balance) {
   return `Вы купили ${number} дроидов, на счету осталось ${balance} кредитов.`;
 }
 
+console.log('========================= Task 4 =========================');
+
 const credits = 23580;
 const pricePerDroid = 3000;
 

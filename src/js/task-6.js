@@ -6,6 +6,8 @@ const ERROR_WRONG_MESSAGE = 'Было введено не число, попро
 let input;
 let total = 0;
 
+console.log('========================= Task 6 =========================');
+
 while (true) {
   input = prompt(PROMPT_NUMBER);
   if (input === null) {
@@ -13,11 +15,11 @@ while (true) {
   } else {
     input = Number(input);
     if (Number.isNaN(input)) {
-      alert(ERROR_WRONG_MESSAGE);
+      console.log(ERROR_WRONG_MESSAGE);
     } else {
       total = total + input;
     }
   }
 }
 
-alert(`Общая сумма чисел равна ${total}`);
+console.log(`Общая сумма чисел равна ${total}`);
